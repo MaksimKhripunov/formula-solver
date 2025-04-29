@@ -11,5 +11,8 @@ public class Main {
 
         System.out.println("Площадь треугольника (a=10, h=5): " + triangleArea.solve());
         System.out.println("Площадь круга (r=7): " + circleArea.solve());
+
+        Formula rectangleArea = new RectangleAreaFormula(4d, 8d);
+        System.out.println("Площадь прямоугольника (a=4, b=8): " + rectangleArea.solve());
     }
 }
