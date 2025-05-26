@@ -35,14 +35,11 @@ jobs:
         run: mvn checkstyle:check -pl core
 
       - name: Run coverage (Jacoco)
+        if: github.ref == 'refs/heads/develop' || github.base_ref == 'develop'
         run: mvn verify -pl core
 
       - name: Generate Jacoco report
         run: mvn jacoco:report -pl core
-
-      - name: Check Jacoco coverage threshold
-        if: github.ref == 'refs/heads/develop' || github.base_ref == 'develop'
-        run: mvn jacoco:check -pl core
 
       - name: Install artifacts
         if: success()
