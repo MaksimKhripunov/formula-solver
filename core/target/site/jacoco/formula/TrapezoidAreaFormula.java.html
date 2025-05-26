@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TrapezoidAreaFormula.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">core</a> &gt; <a href="index.source.html" class="el_package">formula</a> &gt; <span class="el_source">TrapezoidAreaFormula.java</span></div><h1>TrapezoidAreaFormula.java</h1><pre class="source lang-java linenums">package formula;
+
+public class TrapezoidAreaFormula implements Formula{
+    private final Double a;
+    private final Double b;
+    private final Double h;
+
+<span class="fc" id="L8">    public TrapezoidAreaFormula(Double a, Double b, Double h) {</span>
+<span class="fc" id="L9">        this.a = a;</span>
+<span class="fc" id="L10">        this.b = b;</span>
+<span class="fc" id="L11">        this.h = h;</span>
+<span class="fc" id="L12">    }</span>
+
+    @Override
+    public double solve() {
+<span class="fc bfc" id="L16" title="All 6 branches covered.">        if (a &lt;= 0 || b &lt;= 0 || h &lt;= 0) {</span>
+<span class="fc" id="L17">            throw new IllegalArgumentException(&quot;Все параметры должны быть положительными числами&quot;);</span>
+        }
+<span class="fc" id="L19">        return ((a + b) / 2.0) * h;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

@@ -1,4 +1,6 @@
 formula\TriangleAreaFormula.class
 formula\RectangleAreaFormula.class
+formula\service\FormulaService.class
+formula\TrapezoidAreaFormula.class
 formula\CircleAreaFormula.class
 formula\Formula.class
