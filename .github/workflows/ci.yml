@@ -27,15 +27,22 @@ jobs:
         run: mvn compile -pl core
 
       - name: Run tests (feature/* only)
-        if: startsWith(github.ref, 'refs/heads/feature/')
+        if: startsWith(github.ref, 'refs/heads/feature/') || startsWith(github.head_ref, 'feature/')
         run: mvn test -pl core
 
       - name: Run static analysis (develop only)
-        if: github.ref == 'refs/heads/develop'
+        if: github.ref == 'refs/heads/develop' || github.base_ref == 'develop'
         run: mvn checkstyle:check -pl core
 
       - name: Run coverage (Jacoco)
         run: mvn verify -pl core
+
+      - name: Generate Jacoco report
+        run: mvn jacoco:report -pl core
+
+      - name: Check Jacoco coverage threshold
+        if: github.ref == 'refs/heads/develop' || github.base_ref == 'develop'
+        run: mvn jacoco:check -pl core
 
       - name: Install artifacts
         if: success()
