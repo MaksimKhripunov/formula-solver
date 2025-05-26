@@ -20,14 +20,18 @@ public class TrapezoidAreaFormula implements Formula {
     /**
      * Конструктор формулы площади трапеции.
      *
-     * @param a основание a
-     * @param b основание b
-     * @param h высота h
+     * @param baseA основание a
+     * @param baseB основание b
+     * @param height высота h
      */
-    public TrapezoidAreaFormula(final Double a, final Double b, final Double h) {
-        this.a = a;
-        this.b = b;
-        this.h = h;
+    public TrapezoidAreaFormula(
+            final Double baseA,
+            final Double baseB,
+            final Double height
+    ) {
+        this.a = baseA;
+        this.b = baseB;
+        this.h = height;
     }
 
     /**

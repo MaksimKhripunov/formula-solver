@@ -20,12 +20,12 @@ public class TriangleAreaFormula implements Formula {
     /**
      * Конструктор формулы площади треугольника.
      *
-     * @param a основание треугольника
-     * @param h высота треугольника
+     * @param baseA основание треугольника
+     * @param height высота треугольника
      */
-    public TriangleAreaFormula(final Double a, final Double h) {
-        this.a = a;
-        this.h = h;
+    public TriangleAreaFormula(final Double baseA, final Double height) {
+        this.a = baseA;
+        this.h = height;
     }
 
     /**

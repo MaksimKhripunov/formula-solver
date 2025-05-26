@@ -18,10 +18,10 @@ public class FormulaService {
     /**
      * Конструктор сервиса.
      *
-     * @param logger логгер для вывода сообщений
+     * @param formulaLogger логгер для вывода сообщений
      */
-    public FormulaService(final Logger logger) {
-        this.logger = logger;
+    public FormulaService(final Logger formulaLogger) {
+        this.logger = formulaLogger;
     }
 
     /**

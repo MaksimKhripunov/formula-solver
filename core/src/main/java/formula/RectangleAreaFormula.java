@@ -17,12 +17,12 @@ public class RectangleAreaFormula implements Formula {
     /**
      * Конструктор формулы площади прямоугольника.
      *
-     * @param a длина стороны a
-     * @param b длина стороны b
+     * @param sideA длина стороны a
+     * @param sideB длина стороны b
      */
-    public RectangleAreaFormula(final Double a, final Double b) {
-        this.a = a;
-        this.b = b;
+    public RectangleAreaFormula(final Double sideA, final Double sideB) {
+        this.a = sideA;
+        this.b = sideB;
     }
 
     /**

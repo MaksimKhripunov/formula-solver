@@ -14,10 +14,10 @@ public class CircleAreaFormula implements Formula {
     /**
      * Конструктор формулы круга.
      *
-     * @param r радиус круга
+     * @param radius радиус круга
      */
-    public CircleAreaFormula(final Double r) {
-        this.r = r;
+    public CircleAreaFormula(final Double radius) {
+        this.r = radius;
     }
 
     /**
