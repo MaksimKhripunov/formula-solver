@@ -6,8 +6,13 @@ import org.junit.jupiter.api.Test;
 import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
+/**
+ * Тесты для класса FormulaService.
+ */
 class FormulaServiceTest {
 
     @Test

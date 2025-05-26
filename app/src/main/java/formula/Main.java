@@ -5,6 +5,12 @@ package formula;
  * Например: Площадь треугольника по формуле: (1/2) * a * h
  */
 public class Main {
+
+    /**
+     * Точка входа в программу.
+     *
+     * @param args аргументы командной строки
+     */
     public static void main(String[] args) {
         Formula triangleArea = new TriangleAreaFormula(10d, 5d);
         Formula circleArea = new CircleAreaFormula(7d);
