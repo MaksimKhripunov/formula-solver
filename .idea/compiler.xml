@@ -10,5 +10,10 @@
         <module name="core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="formula-solver" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
