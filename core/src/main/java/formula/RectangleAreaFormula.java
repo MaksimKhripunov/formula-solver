@@ -1,3 +1,6 @@
+/**
+ * Формулы для расчёта площадей различных фигур.
+ */
 package formula;
 
 /**
@@ -5,7 +8,10 @@ package formula;
  */
 public class RectangleAreaFormula implements Formula {
 
+    /** Сторона a прямоугольника. */
     private final Double a;
+
+    /** Сторона b прямоугольника. */
     private final Double b;
 
     /**
@@ -14,7 +20,7 @@ public class RectangleAreaFormula implements Formula {
      * @param a длина стороны a
      * @param b длина стороны b
      */
-    public RectangleAreaFormula(Double a, Double b) {
+    public RectangleAreaFormula(final Double a, final Double b) {
         this.a = a;
         this.b = b;
     }

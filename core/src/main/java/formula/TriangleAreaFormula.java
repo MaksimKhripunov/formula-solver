@@ -1,3 +1,6 @@
+/**
+ * Формулы для расчёта площадей различных фигур.
+ */
 package formula;
 
 /**
@@ -5,7 +8,13 @@ package formula;
  */
 public class TriangleAreaFormula implements Formula {
 
+    /** Коэффициент. */
+    private static final double HALF = 0.5;
+
+    /** Основание треугольника. */
     private final Double a;
+
+    /** Высота треугольника. */
     private final Double h;
 
     /**
@@ -14,7 +23,7 @@ public class TriangleAreaFormula implements Formula {
      * @param a основание треугольника
      * @param h высота треугольника
      */
-    public TriangleAreaFormula(Double a, Double h) {
+    public TriangleAreaFormula(final Double a, final Double h) {
         this.a = a;
         this.h = h;
     }
@@ -26,6 +35,6 @@ public class TriangleAreaFormula implements Formula {
      */
     @Override
     public double solve() {
-        return 0.5 * a * h;
+        return HALF * a * h;
     }
 }

@@ -1,3 +1,6 @@
+/**
+ * Формулы для расчёта площадей различных фигур.
+ */
 package formula;
 
 import org.junit.jupiter.api.Test;

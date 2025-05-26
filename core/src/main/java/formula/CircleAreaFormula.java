@@ -1,3 +1,6 @@
+/**
+ * Формулы для расчёта площадей различных фигур.
+ */
 package formula;
 
 /**
@@ -5,6 +8,7 @@ package formula;
  */
 public class CircleAreaFormula implements Formula {
 
+    /** Радиус круга. */
     private final Double r;
 
     /**
@@ -12,7 +16,7 @@ public class CircleAreaFormula implements Formula {
      *
      * @param r радиус круга
      */
-    public CircleAreaFormula(Double r) {
+    public CircleAreaFormula(final Double r) {
         this.r = r;
     }
 

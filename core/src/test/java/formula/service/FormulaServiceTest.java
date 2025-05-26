@@ -1,3 +1,6 @@
+/**
+ * Сервисные классы, обрабатывающие формулы.
+ */
 package formula.service;
 
 import formula.Formula;

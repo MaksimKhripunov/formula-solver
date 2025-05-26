@@ -1,3 +1,6 @@
+/**
+ * Формулы для расчёта площадей различных фигур.
+ */
 package formula;
 
 /**
@@ -5,8 +8,13 @@ package formula;
  */
 public class TrapezoidAreaFormula implements Formula {
 
+    /** Основание a трапеции. */
     private final Double a;
+
+    /** Основание b трапеции. */
     private final Double b;
+
+    /** Высота трапеции. */
     private final Double h;
 
     /**
@@ -16,7 +24,7 @@ public class TrapezoidAreaFormula implements Formula {
      * @param b основание b
      * @param h высота h
      */
-    public TrapezoidAreaFormula(Double a, Double b, Double h) {
+    public TrapezoidAreaFormula(final Double a, final Double b, final Double h) {
         this.a = a;
         this.b = b;
         this.h = h;
@@ -31,7 +39,9 @@ public class TrapezoidAreaFormula implements Formula {
     @Override
     public double solve() {
         if (a <= 0 || b <= 0 || h <= 0) {
-            throw new IllegalArgumentException("Все параметры должны быть положительными числами");
+            throw new IllegalArgumentException(
+                    "Все параметры должны быть положительными числами"
+            );
         }
         return ((a + b) / 2.0) * h;
     }

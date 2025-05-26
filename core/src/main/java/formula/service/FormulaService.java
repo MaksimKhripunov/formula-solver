@@ -1,3 +1,6 @@
+/**
+ * Сервисные классы, обрабатывающие формулы.
+ */
 package formula.service;
 
 import formula.Formula;
@@ -9,6 +12,7 @@ import java.util.logging.Logger;
  */
 public class FormulaService {
 
+    /** Логгер. */
     private final Logger logger;
 
     /**
@@ -16,7 +20,7 @@ public class FormulaService {
      *
      * @param logger логгер для вывода сообщений
      */
-    public FormulaService(Logger logger) {
+    public FormulaService(final Logger logger) {
         this.logger = logger;
     }
 
