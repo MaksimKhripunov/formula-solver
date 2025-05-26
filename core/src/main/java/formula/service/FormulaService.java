@@ -30,7 +30,7 @@ public class FormulaService {
      * @param formula формула для вычисления
      * @return результат вычисления
      */
-    public double calculate(Formula formula) {
+    public double calculate(final Formula formula) {
         double result = formula.solve();
         logger.info("Результат: " + result);
         return result;
